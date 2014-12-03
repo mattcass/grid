@@ -33,6 +33,10 @@ h1, h2, h3, h4, h5 {
 main {
   background: #FFF; }
 
+img {
+  width: 30%;
+  height: auto; }
+
 /*
 FRAMEWORK STYLE FOR BETTER VISUAL UNDERSTANDING
 */
