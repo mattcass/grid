@@ -1,0 +1,126 @@
+/*
+FRAMEWORK STYLE FOR BETTER VISUAL UNDERSTANDING
+*/
+
+$primary-background : tomato;
+$secondary-background : #333;
+
+$white : #FFF;
+$off-white : #F9F9F9;
+$black : #000;
+
+$primary-text : #515151;
+$font-stack : "oxygen", georgia, serif;
+$heading-font-stack : "Vollkorn", georgia, sans-serif;
+
+body {
+    -webkit-text-size-adjust: 100%;
+    -ms-text-size-adjust: 100%;
+	color: $primary-text;
+	font: normal 110%/1.7em $font-stack;
+	-webkit-font-smoothing: subpixel-antialiased;
+    word-wrap: break-word;
+    background: $off-white;
+}
+
+h1, h2, h3, h4, h5 {
+	color: $black;
+	font: 2em/1.2em $heading-font-stack;
+    font-weight: 400;
+}
+
+* {
+    text-align: center;
+}
+
+.one:nth-child(odd),
+.two:nth-child(odd),
+.three:nth-child(odd),
+.half:nth-child(odd),
+.quarter:nth-child(odd) {
+    background: $primary-background;
+}
+
+.content {
+    padding-top: 5%;
+    background: $secondary-background;
+    color: $white;
+}
+
+main {
+    background: $white;
+}
+/*
+FRAMEWORK STYLE FOR BETTER VISUAL UNDERSTANDING
+*/
+
+.container {
+    width: 87%;
+    margin-left: 6.5%;
+    height: auto;
+}
+
+.content {
+    clear: both;
+    width: 50%;
+    margin-left: 25%;
+    padding-bottom: 5%;
+    height: auto;
+    padding-left: 1%;
+    padding-right: 1%;
+    @media only screen and (max-width: 1200px) {
+        width: 70%;
+        margin-left: 15%;
+    }
+    @media only screen and (max-width: 1000px) {
+        width: 80%;
+        margin-left: 10%;
+    }
+    @media only screen and (max-width: 600px) {
+            width: 100%;
+            margin-left: 0%;
+    }
+}
+
+
+.half { 
+    float: left;    
+    width: 50%; 
+    @media only screen and (max-width: 959px) {
+        width: 100%; 
+    }
+}
+
+.quarter { 
+    float: left;
+    width: 25%; 
+    @media only screen and (max-width: 959px) {
+        float: left; 
+        width: 100%; 
+    }    
+}
+
+.one { 
+    float: left; 
+    width: 33.3%;  
+    @media only screen and (max-width: 959px) {
+        float: left; 
+        width: 100%; 
+    }    
+}
+
+.two { 
+    float: left; 
+    width: 66.66%; 
+    @media only screen and (max-width: 959px) {
+        float: left; 
+        width: 100%; 
+    }    
+}
+
+.three { 
+    float: left; 
+    width: 100%; 
+    @media only screen and (max-width: 959px) {
+    }    
+}
